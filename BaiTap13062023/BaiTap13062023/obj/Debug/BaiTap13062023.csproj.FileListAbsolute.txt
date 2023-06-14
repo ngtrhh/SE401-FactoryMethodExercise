@@ -1,0 +1,8 @@
+D:\BaiTap13062023\BaiTap13062023\bin\Debug\BaiTap13062023.exe.config
+D:\BaiTap13062023\BaiTap13062023\bin\Debug\BaiTap13062023.exe
+D:\BaiTap13062023\BaiTap13062023\bin\Debug\BaiTap13062023.pdb
+D:\BaiTap13062023\BaiTap13062023\obj\Debug\BaiTap13062023.csproj.AssemblyReference.cache
+D:\BaiTap13062023\BaiTap13062023\obj\Debug\BaiTap13062023.csproj.SuggestedBindingRedirects.cache
+D:\BaiTap13062023\BaiTap13062023\obj\Debug\BaiTap13062023.csproj.CoreCompileInputs.cache
+D:\BaiTap13062023\BaiTap13062023\obj\Debug\BaiTap13062023.exe
+D:\BaiTap13062023\BaiTap13062023\obj\Debug\BaiTap13062023.pdb
