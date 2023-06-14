@@ -17,10 +17,9 @@ namespace BaiTap13062023
             {
                 menu = new List<BreadType>();
             }
-            public void CreateMenu(List<BreadType> breadType)
+            public void AddToMenu(BreadType breadType)
             {
-                foreach (var type in breadType)
-                    menu.Add(type);
+                menu.Add(breadType);
             }
 
             public void DisplayMenu()
@@ -101,7 +100,7 @@ namespace BaiTap13062023
 
         public abstract class BreadFactory
         {
-            public BreadType type;
+            private BreadType type { get; set; }
 
             public BreadFactory(BreadType type)
             {
@@ -110,10 +109,10 @@ namespace BaiTap13062023
 
             public abstract IBread Make();
 
-            //public IBread GetBread()
-            //{
-            //    return IBread;
-            //}
+            public BreadType GetBread()
+            {
+                return type;
+            }
         }
 
         public class NormalBreadFactory : BreadFactory
@@ -153,10 +152,9 @@ namespace BaiTap13062023
         {
             Bakery bakery = new Bakery();
 
-            bakery.CreateMenu(new List<BreadType> {
-                new BreadType("Normal Bread"),
-                new BreadType("Cheese Bread"),
-                new BreadType("Meat Bread") });
+            bakery.AddToMenu(new BreadType("Normal Bread"));
+            bakery.AddToMenu(new BreadType("Cheese Bread"));
+            bakery.AddToMenu(new BreadType("Meat Bread"));
 
             bakery.DisplayMenu();
             bakery.TakeOrder();
