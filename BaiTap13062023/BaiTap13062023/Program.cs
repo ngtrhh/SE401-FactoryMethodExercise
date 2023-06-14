@@ -53,7 +53,8 @@ namespace BaiTap13062023
                 }
                 else
                 {
-                    throw new Exception("Bakery don't have this type");
+                    Console.WriteLine("Menu doesn't have this item");
+                    return null;
                 }
             }
         }
